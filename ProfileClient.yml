@@ -13,3 +13,36 @@ spring:
     show-sql: true
     properties:
       format_sql: true
+---
+
+spring:
+  profiles:  dev
+welcome:
+  message:  "welcome to my world from dev!!"      
+  datasource:
+    url: jdbc:mysql://localhost/devdb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: 
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      format_sql: true
+      
+---  
+      
+spring:
+  profiles:  prod
+  welcome:
+    message:  "welcome to my world from prod!!"
+  datasource:
+    url: jdbc:mysql://localhost/proddb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: 
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      format_sql: true
