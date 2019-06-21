@@ -5,6 +5,10 @@ spring:
     url: jdbc:mysql://localhost/test?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
     password: 
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql:
 name: welcome to my world from TEST!!    
 
 ---
@@ -15,6 +19,12 @@ spring:
     url: jdbc:mysql://localhost/devdb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
     password: 
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+      properties:
+      format_sql: true
 name: welcome to my world from DEV!!
 
 ---
@@ -25,4 +35,10 @@ spring:
     url: jdbc:mysql://localhost/proddb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
     password: 
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      format_sql: true
 name: welcome to my world from PROD!!
