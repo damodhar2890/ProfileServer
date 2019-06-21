@@ -11,8 +11,7 @@ spring:
     show-sql: true
     properties:
       format_sql: true
-welcome:
-  message:  "welcome to my world!!"      
+   
 ---
 
 spring:
