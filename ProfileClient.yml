@@ -1,12 +1,11 @@
 spring:
-  profiles:  test    
+  profiles: test    
 spring:    
   datasource:
     url: jdbc:mysql://localhost/test?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
     password: 
-welcome:
-  message:  "welcome to my world from TEST!!"   
+name: welcome to my world from TEST!!   
 ---
 
 spring:
