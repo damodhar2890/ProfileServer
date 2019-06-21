@@ -6,3 +6,20 @@ spring:
     username: root
     password: 
 name: welcome to my world from TEST!!     
+---
+
+spring:    
+  profiles: dev    
+  datasource:
+    url: jdbc:mysql://localhost/devdb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: 
+ name: welcome to my world from DEV!!  
+---  
+spring:    
+  profiles: prod 
+  datasource:
+    url: jdbc:mysql://localhost/proddb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: 
+name: welcome to my world from DEV!! 
