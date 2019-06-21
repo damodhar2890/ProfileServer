@@ -1,7 +1,5 @@
 
-  
-welcome:
-  message:  "welcome to my world!!"  
+    
 spring:    
   datasource:
     url: jdbc:mysql://localhost/test?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
@@ -13,6 +11,8 @@ spring:
     show-sql: true
     properties:
       format_sql: true
+welcome:
+  message:  "welcome to my world!!"      
 ---
 
 spring:
